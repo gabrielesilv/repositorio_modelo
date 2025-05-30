@@ -33,12 +33,16 @@
 - Um projeto pode ter algumas dessas branchs abaixo:
   - main (ou master): 
     - Versão estável do projeto (ou aquilo que o público está utilizando no momento)
+    - Normalmente a main é atualizada no final de cada sprint, recebe tudo que foi realizado na homolog (foi testado e comprovado)
   - homolog ou log:
-    - versão posterior a de desenvolvimento, ou seja, é a de testes. Normalmente ela antecipa a main
+    - versão posterior a de desenvolvimento, ou seja, é a de testes.
+    - Normalmente ela antecipa a main
+    - Normalmente a homolog é atualizada no final de cada sprint, recebendo todas as modificações criadas na develop
   - develop: 
     - Versão em desenvolvimento, normalmente é utilizada por desenvolvedores do Projeto. 
     - Centralizadora das modificações realizadas pelos devs
     - No final ela é mesclada a homolog
+    - Normalmente a develop é considerada mais atualizada comparada a main e homolog
 
 - Branchs relacionadas ao card Kanban:
   - Por exemplo:  [sufixo-atomic-feat]/[nome-card]
