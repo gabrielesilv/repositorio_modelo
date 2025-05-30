@@ -18,11 +18,34 @@
   - /docs -> A pasta é indicada para guardar imagens ou docs relacionados ao projeto. Por exemplo: Diagramas, Fluxogramas, Mapa Mentais, Canvas, etc.
 
 ## Utilizar boas práticas em Commits
-
 É necessário realizar os dois:
-
   - Commits Atômicos: Realizar commits pequenos -> a unidade de trabalho
   - Commits Semnântico: É informar com sufixo e em poucas palavras o que foi realizado nessa unidade de trabalho
 
 ## Na raiz do Projeto
-  - 
+- É necessário ter:
+  - O gitignore: é o arquivo para informar ao git quais extensões ou pastas que precisam ser ignoradas
+  - License: é informado qual é a licença do projeto (Obrigatório quando o projeto é público)
+  - Contribuiting: é informado quem são os autores e como contribuir
+  - Changelog: é utilizado para informar o histórico de versões do Projeto
+
+## Gerenciar Branchs
+- Um projeto pode ter algumas dessas branchs abaixo:
+  - main (ou master): 
+    - Versão estável do projeto (ou aquilo que o público está utilizando no momento)
+  - homolog ou log:
+    - versão posterior a de desenvolvimento, ou seja, é a de testes. Normalmente ela antecipa a main
+  - develop: 
+    - Versão em desenvolvimento, normalmente é utilizada por desenvolvedores do Projeto. 
+    - Centralizadora das modificações realizadas pelos devs
+    - No final ela é mesclada a homolog
+
+- Branchs relacionadas ao card Kanban:
+  - Por exemplo:  [sufixo-atomic-feat]/[nome-card]
+  - cada card do Kanban vai ter uma branch
+  - cada dev pega um ou N cards do Kanban
+  - cada branch é baseada da develop
+  - no final ela é mesclada a develop
+
+- Flow das branchs:
+  - branch-de-trabalho -> develop -> homolog -> main
